@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>   
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <script>
+        let normalstring="Aaru";
+        let normalstring1="Aaru";
+        let stringobject = new String("Aaru");
+        let stringobject1 = new String("Aaru");
+        let string1="The Java Script Training";
+        document.getElementById("demo").innerHTML = typeof normalstring + "<br>" + typeof stringobject;
+
+        document.getElementById("demo1").innerHTML = (stringobject==stringobject1);
+
+        //to display the words according to the position of string sentence .. 3 means 3 words will be displayed
+        document.getElementById("demo2").innerHTML=string1.slice(3);
+        document.getElementById("demo3").innerHTML=string1.substr(2);
+
+        //for(-5) last letters wil be displayed-count is done from last digits
+        document.getElementById("demo4").innerHTML=string1.slice(-5);
+
+
+                //replace of the string words
+        newstring=string1.replace("Java" , "C Language");
+        document.getElementById("demo5").innerHTML=string1.replace("Java" , "C language");
+
+        //for uppercase and lowercase of the letters
+        document.getElementById("demo6").innerHTML=string1.toLocaleUpperCase();
+        document.getElementById("demo7").innerHTML=string1.toLocaleLowerCase();
+
+        //for concatination of 2 strings
+        concatstring=string1.concat("  "+"<br>"+"1 month of training  ");
+        trimstring=concatstring.trim();
+        document.getElementById("demo8").innerHTML=trimstring;
+
+        //charAt() --result according to position of letters
+        document.getElementById("demo9").innerHTML=string1.charAt(5);
+        document.getElementById("demo10").innerHTML=string1.charCodeAt(0);
+
+        //each word in sentence given positions from 0...1 means first word will be display
+
+
+    
+
+    </script>
+</body>
+</html>

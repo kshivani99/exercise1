@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>  
+    <p id="demo1"></p>  
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+        let firstname='Aradhya';
+        let lastname='sai';
+        let searchstring ="the zensar techologies  zensar freshers";
+        let templatetext=`welcome ${firstname}  ${lastname}`;
+        document.getElementById("demo").innerHTML=searchstring.indexOf("zensar");
+        document.getElementById("demo1").innerHTML=searchstring.lastIndexOf("zensar");
+        document.getElementById("demo2").innerHTML=searchstring.search(/freshers/i);
+        document.getElementById("demo3").innerHTML=searchstring.match(/zensar/gi);//same words will match n display
+        document.getElementById("demo4").innerHTML=searchstring.includes("zensar");//boolean whether word is present or not
+        document.getElementById("demo5").innerHTML=searchstring.startsWith("the");
+        document.getElementById("demo6").innerHTML=searchstring.endsWith("zensar");
+        document.getElementById("demo7").innerHTML=templatetext;
+        </script>
+</body>
+</html>
